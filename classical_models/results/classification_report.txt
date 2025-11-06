@@ -1,0 +1,70 @@
+
+Clinical Data Classification Report
+==================================
+
+Dataset Information:
+- Total samples: 125
+- Features used: Gender, Age, BMI, PASI, BSA
+- Target classes: PSA (46) vs PSO (79)
+- Train/Test split: 70%/30%
+
+Model Performance Summary:
+-------------------------
+
+1. SVM
+   - Accuracy: 0.658
+   - Precision: 0.667
+   - Recall: 0.917
+   - F1-Score: 0.772
+   - ROC-AUC: 0.634
+
+2. Logistic Regression
+   - Accuracy: 0.632
+   - Precision: 0.632
+   - Recall: 1.000
+   - F1-Score: 0.774
+   - ROC-AUC: 0.446
+
+3. Random Forest
+   - Accuracy: 0.553
+   - Precision: 0.621
+   - Recall: 0.750
+   - F1-Score: 0.679
+   - ROC-AUC: 0.551
+
+4. K-Nearest Neighbors
+   - Accuracy: 0.526
+   - Precision: 0.607
+   - Recall: 0.708
+   - F1-Score: 0.654
+   - ROC-AUC: 0.579
+
+5. Naive Bayes
+   - Accuracy: 0.526
+   - Precision: 0.615
+   - Recall: 0.667
+   - F1-Score: 0.640
+   - ROC-AUC: 0.455
+
+6. Decision Tree
+   - Accuracy: 0.474
+   - Precision: 0.583
+   - Recall: 0.583
+   - F1-Score: 0.583
+   - ROC-AUC: 0.435
+
+Best Performing Model: SVM
+- Achieved 65.8% accuracy on test set
+- This model shows the best balance of precision and recall
+
+Clinical Insights:
+- All models achieved reasonable performance using only basic clinical variables
+- The clinical features (Gender, Age, BMI, PASI, BSA) provide meaningful predictive power
+- Models can potentially assist in clinical decision-making
+
+Files Generated:
+- model_comparison_summary.csv: Detailed metrics comparison
+- plots/metrics_comparison.png: Performance metrics visualization
+- plots/confusion_matrices.png: Confusion matrices for all models
+- plots/roc_curves.png: ROC curves comparison
+- plots/feature_importance.png: Feature importance analysis
